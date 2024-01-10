@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Your Portfolio</title>
+</head>
+
+<body>
+  <header>
+   
+    <div class="profile-section">
+      <h1>Santhosh Kumar E</h1>
+      <p>Web Developer</p>
+      <img src="your-profile-picture.jpg" alt="Your Profile Picture" class="profile-picture">
+    </div>
+    <div class="container">
+      <nav>
+        <a href="#bio">Bio</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="bio" class="animated-section">
+    <h2>About Me</h2>
+    <div class="trending-badge">Trending</div>
+    <p>
+      Hi, I'm Santhosh Kumar E, a passionate Software Developer with a background in Computer Science. I'm dedicated to build user-friendly websites
+    </p>
+    <p>
+      With a strong foundation in python, I aim to Data Science. In my free time, I enjoy explore new technologies. Explore my portfolio to discover more about my work and projects.
+    </p>
+  </section>
+  <center>
+
+  <section id="skills" class="animated-section">
+    <h2>Skills</h2>
+    <div class="skill-category">
+      <h3>Programming Languages</h3>
+      <ul>
+        <li class="animated-element">JavaScript</li>
+        <li class="animated-element">Python</li>
+        <li class="animated-element">Java</li>
+        <li class="animated-element">C</li>
+        <li class="animated-element">R</li>
+      </ul>
+    </div>
+    <div class="skill-category">
+      <h3>Web Development</h3>
+      <ul>
+        <li class="animated-element">HTML5</li>
+        <li class="animated-element">CSS3</li>
+        <li class="animated-element">SQL</li>
+        <li class="animated-element">PHP</li>
+        <li class="animated-element">React.js</li>
+      </ul>
+    </div>
+    <div class="skill-category">
+      <h3>Design Tools</h3>
+      <ul>
+        <li class="animated-element">Adobe Photoshop</li>
+        <li class="animated-element">Figma</li>
+      </ul>
+    </div>
+  </section>
+</center>
+<center>
+
+  <section id="projects" class="animated-section">
+    <center><h2>Projects</h2></center>
+    <div class="project-card animated-element">
+      <img src="project1.jpg" alt="Project 1">
+      <h3>Attendance Management System</h3>
+      <p>The system record the attendance of a student  using face recognition and stored in database 
+        The project was was developed using Python and MySQL for  Database
+        ,We used tkinter for graphical user interface development ,and OpenCV for image processing and face recognition  Other libraries such as CSV, Numpy, Pandas, and datetime were used
+        I was in development of the project 
+        .</p>
+      <ul>
+        <li>Technology: python, mysql</li>
+        <li>Role: Frontend Developer</li>
+      
+      </ul>
+   
+      <a href="project1-link" target="_blank">Explore Project</a>
+    </div>
+
+    <div class="project-card animated-element">
+      <img src="project2.png" alt="Project 2">
+      <h3>Chat Application using React</h3>
+      <p>a real-time messaging application developed using 
+        React and Firebase. This application aims to provide a reliable and efficient 
+        communication platform that is both user-friendly and secure..</p>
+      <ul>
+        <li>Technology: React.js, Firebase</li>
+        <li>Role: Full Stack Developer</li>
+       
+      </ul>
+      <a href="project2-link" target="_blank">Explore Project</a>
+    </div>
+  </section>
+</center>
+
+  <section id="contact" class="animated-section">
+    <h2>Contact</h2>
+    <p>Feel free to reach out! Whether you have a question or just want to say hi, I'm always open to connecting.</p>
+    <div class="contact-info animated-element">
+      <p>Email: santhosh.kumar.e010@gmail.com</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile/" target="_blank">Your LinkedIn</a></p>
+    </div>
+    <form action="submit-contact-form.php" method="post" class="animated-element">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit" class="animated-element">Send Message</button>
+    </form>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

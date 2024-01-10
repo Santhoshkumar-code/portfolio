@@ -1,0 +1,377 @@
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 10px ;
+  background-color: #d568f0;
+  color: #b7d609;
+  border-radius: 10%;
+  animation: fadeInUp 1s ease-out;
+  
+  
+}
+
+header {
+  background-color: #235874;
+  color: #f0f1f1;
+  padding: 10px 0;
+}
+
+nav {
+  margin-top: 20px;
+  
+}
+
+nav a {
+  text-decoration: none;
+  color: #f1ebeb;
+  margin-right: 20px;
+  transition: color 0.3s ease;
+  
+}
+
+
+.profile-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  animation: slideInLeft 1s ease-out;
+}
+
+.profile-picture {
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  border-radius: 10%; /* Makes the image round, adjust as needed */
+  animation: slideInLeft 1s ease-out;
+}
+
+section {
+  margin: 20px 0;
+  
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.light-mode {
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.dark-mode {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+}
+
+/**/
+#bio {
+  background: linear-gradient(45deg, #3498db, #e74c3c); /* Gradient background for the bio section */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  color: #ecf0f1; /* Bio section text color */
+}
+
+#bio h2 {
+  color: #fff; /* Bio section header text color */
+  margin-bottom: 25px;
+}
+
+#bio p {
+  line-height: 3.6;
+}
+
+/* Trending animation for badge */
+@keyframes trendingAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.trending-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #f39c12; /* Trending badge background color */
+  color: #fff; /* Trending badge text color */
+  padding: 5px 10px;
+  border-radius: 5px;
+  animation: trendingAnimation 1.5s infinite;
+}
+
+/* Additional animations for bio elements */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#bio h2, #bio p {
+  animation: fadeInUp 1s ease-out;
+}
+/**/
+
+#skills {
+  padding: 30px;
+}
+
+.skill-category {
+  margin-bottom: 20px;
+  animation: slideInLeft 1s ease-out; /* Additional animation for skills section */
+}
+
+.skill-category h3 {
+  color: #3498db; /* Skill category header text color */
+  margin-bottom: 10px;
+}
+
+.skill-category ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skill-category li {
+  display: inline-block;
+  background-color: #2ecc71; /* Skill tag background color */
+  color: #fff; /* Skill tag text color */
+  padding: 5px 10px;
+  margin: 5px 5px 0 0;
+  border-radius: 5px;
+  animation: trendingAnimation 1s infinite; /* Trending animation for skill tags */
+}
+
+/* Keyframes for trending animation */
+@keyframes trendingAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Keyframes for additional animation */
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/**/
+
+
+#projects {
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.project-card h3 {
+  color: #3498db; /* Project title text color */
+  margin-top: 10px;
+}
+
+.project-card p {
+  color: #555; /* Project description text color */
+  margin: 10px 0;
+}
+
+.project-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.project-card li {
+  display: inline-block;
+  background-color: #2ecc71; /* Technology tag background color */
+  color: #fff; /* Technology tag text color */
+  padding: 5px 10px;
+  margin: 5px 5px 0 0;
+  border-radius: 5px;
+}
+
+.project-card a {
+  display: block;
+  background-color: #e74c3c; /* Button background color */
+  color: #fff; /* Button text color */
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 0 0 10px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.project-card a:hover {
+  background-color: #c0392b; /* Button background color on hover */
+}
+
+/* Trending animation */
+@keyframes trendingAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.trending-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #f39c12; /* Trending badge background color */
+  color: #fff; /* Trending badge text color */
+  padding: 5px 10px;
+  border-radius: 5px;
+  animation: trendingAnimation 2s infinite;
+}
+/**/
+#contact {
+  padding: 30px;
+}
+
+.contact-info {
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  color: #555; /* Contact information text color */
+}
+
+form {
+  display: grid;
+  gap: 15px;
+}
+
+form label {
+  display: block;
+  color: #3498db; /* Label text color */
+  margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px 15px;
+  background-color: #e74c3c; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #c0392b; /* Button background color on hover */
+}
+
+/* Trending animation for form button */
+@keyframes pulseAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+form button {
+  animation: pulseAnimation 1s infinite;
+}
+
+/* Additional animations for contact section */
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+#contact {
+  animation: slideInRight 1s ease-out;
+}
+
+
